@@ -23,7 +23,7 @@ A very important thing here is to transform global coordinates into car coordina
 ![MPC Tuning](MPC_tuning.png)
 
 In order to use simplified kinematic model, I prefer to use small dt which can reduce error.
-If look too far ahead, the track cannot be represented by 1st order polynormial, so 30 steps are applied.
+If look too far ahead, the track cannot be represented by 1st order polynormial, so 20 steps are applied.
 Other tunable parameters are shown as above pic.
 
 ## Latency
