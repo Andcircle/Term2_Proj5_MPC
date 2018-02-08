@@ -17,14 +17,14 @@ MPC uses a kinematic model as shown above, the states include x, y coordinates, 
 
 The MPC in this project only consider several seconds ahead, normally the road will not change significantly. So 1st order polynomial is used to represent the track.
 
-A very important thing here is to transform global coordinates into car coordinates. The simplified kinematic model can only be used when the track is relatively straight, and driving direction is x-axis. After coordinates tranformed, all these preconditions are met. 
+A very important thing here is to transform global coordinates into car coordinates. The simplified kinematic model can only be used when the track is relatively straight, and driving direction is close to x-axis. After coordinates tranformed, all these preconditions are met. 
 
 ## MPC Parameter tuning
 ![MPC Tuning](MPC_tuning.png)
 
 In order to use simplified kinematic model, I prefer to use small dt which can reduce error.
 If look too far ahead, the track cannot be represented by 1st order polynormial, so 20 steps are applied.
-Other tunable parameters are shown as above pic.
+Other tunable parameters are shown in the above pic.
 
 ## Latency
 
